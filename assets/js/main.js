@@ -33,16 +33,15 @@ window.addEventListener("load", () => {
     skycons.play();
     return skycons.set(iconID, Skycons[aktIcon]);
   }
-
-  fetch(
-    "http://newsapi.org/v2/everything?q=apple&from=2020-03-24&to=2020-03-24&sortBy=popularity&apiKey=4c76937982ca48dba378fa0b10a568f8"
-  )
-    .then(response => response.json())
-    .then(post => {
-      console.log(post.articles);
-      document.querySelector(".news").innerHTML = post.articles[0].title;
-      document.querySelector(".heute").innerHTML = `<div>
+});
+fetch(
+  "http://newsapi.org/v2/everything?q=apple&from=2020-03-24&to=2020-03-24&sortBy=popularity&apiKey=4c76937982ca48dba378fa0b10a568f8"
+)
+  .then(response => response.json())
+  .then(post => {
+    console.log(post.articles);
+    document.querySelector(".news").innerHTML = post.articles[0].title;
+    document.querySelector(".heute").innerHTML = `<div>
       <a href=${post.articles[0].url}> Read More</a>
       </div>`;
-    });
-});
+  });
