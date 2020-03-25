@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: url(../img/wetter.jpeg),
+    linear-gradient(rgb(218, 225, 226), rgb(17, 47, 243));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+.ort,
+.temperatur {
+  height: 30vh;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.temperatur {
+  flex-direction: column;
+}
+.grad-section {
+  display: flex;
+  align-items: center;
+}
+.grad-section span {
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+.grad-section h2 {
+  font-size: 3rem;
+}
+a {
+  text-decoration: none;
+  color: rgb(199, 32, 32);
+  font-size: 2rem;
+}
