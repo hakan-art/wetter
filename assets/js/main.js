@@ -35,7 +35,7 @@ window.addEventListener("load", () => {
   }
 });
 fetch(
-  "http://newsapi.org/v2/everything?q=apple&from=2020-03-24&to=2020-03-24&sortBy=popularity&apiKey=4c76937982ca48dba378fa0b10a568f8"
+  "https://newsapi.org/v2/everything?q=apple&from=2020-03-24&to=2020-03-24&sortBy=popularity&apiKey=4c76937982ca48dba378fa0b10a568f8"
 )
   .then(response => response.json())
   .then(post => {
